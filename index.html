@@ -368,6 +368,39 @@
 .padlet-submit-box p{line-height:1.7}
 .btn-padlet{display:inline-block;width:100%;margin-top:10px;padding:14px 18px;border:0;border-radius:12px;background:#a62d70;color:#fff;font:inherit;font-weight:700;font-size:18px;cursor:pointer;text-decoration:none}
 
+
+.level-banner{
+  margin:14px auto 18px;
+  padding:12px 16px;
+  max-width:900px;
+  border:2px solid #d7dce5;
+  border-radius:14px;
+  background:#f8fafc;
+  text-align:center;
+  line-height:1.7;
+}
+.level-banner strong{font-size:1.08rem}
+
+
+.scaffold-panel{
+  margin:16px 0;
+  padding:14px;
+  border:1px solid #dfe5f0;
+  border-radius:12px;
+  background:#fbfcff;
+}
+.scaffold-title{font-weight:700;margin-bottom:10px}
+.scaffold-buttons{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.scaffold-btn{
+  border:0;border-radius:10px;padding:9px 12px;cursor:pointer;font-weight:600;
+  background:#eef1f8;color:#34415c
+}
+.scaffold-btn.active{background:#3957a4;color:white}
+.scaffold-help{display:none;margin-top:10px;padding:12px;border-radius:10px;background:#fff6d8;line-height:1.8}
+.scaffold-help.show{display:block}
+.help-section{margin-top:8px}
+.help-section strong{color:#3957a4}
+
 </style>
 </head>
 
@@ -379,6 +412,12 @@
         <p>有顺序地看 👀 → 有条理地说 🗣️ → 用 PE(OF)E(OF)L 说具体 💡</p>
     </div>
 </header>
+
+<div class="level-banner">
+  <strong>LEVEL 1 🌱 基础训练｜学校食堂</strong><br>
+  🎯 本关重点：我会看 · 我会按顺序说
+</div>
+
 
 <div class="container">
 
@@ -508,7 +547,32 @@
                         <p><strong>➡️ 从左到右　／　⬅️ 从右到左</strong></p>
                     </div>
 
-                    <div id="sceneDetails">
+                    
+<div class="scaffold-panel" data-scaffold="stage1">
+  <div class="scaffold-title">🪜 选择你需要的帮助</div>
+  <div class="scaffold-buttons">
+    <button type="button" class="scaffold-btn" data-level="basic">🌱 我需要多一点帮助</button>
+    <button type="button" class="scaffold-btn" data-level="middle">🌿 我需要一点帮助</button>
+    <button type="button" class="scaffold-btn" data-level="challenge">🌳 我自己挑战</button>
+  </div>
+  <div class="scaffold-help" data-content>
+    <div class="help-section vocab-help"></div>
+    <div class="help-section sentence-help"></div>
+  </div>
+  <template data-basic>
+    <div><strong>💡 相关词语：</strong><br>食堂、摊位、排队、插队、托盘、餐具、垃圾桶、收拾、擦桌子、保持整洁、遵守秩序</div>
+    <div style="margin-top:10px"><strong>🧩 适合句式：</strong><br>• 我看到……正在……<br>• 他／她这样做可能会……<br>• 我觉得他／她这样做是对的／不对的，因为……<br>• 看到这一幕，我觉得……<br>• 有一次，我也……<br>• 所以，我们应该……</div>
+  </template>
+  <template data-middle>
+    <div><strong>💡 关键词：</strong><br>排队、插队、收拾、整洁、秩序</div>
+    <div style="margin-top:10px"><strong>🧩 思考提示：</strong><br>• 谁在做什么？<br>• 这样做会有什么结果？<br>• 你觉得对不对？为什么？<br>• 你有什么感受？</div>
+  </template>
+  <template data-challenge>
+    <div><strong>🌳 挑战模式：</strong><br>不显示词语和句式，请根据图片自己组织完整回答。</div>
+  </template>
+</div>
+
+<div id="sceneDetails">
                         <div class="prompt-card">
                             <h3>请选择图片中的号码</h3>
                             <p>按下“显示观察路线”，再点击图片中的 ① ② ③ ④。</p>
@@ -538,6 +602,31 @@
                     </div>
 
                     
+
+<div class="scaffold-panel" data-scaffold="stage2">
+  <div class="scaffold-title">🪜 选择你需要的帮助</div>
+  <div class="scaffold-buttons">
+    <button type="button" class="scaffold-btn" data-level="basic">🌱 我需要多一点帮助</button>
+    <button type="button" class="scaffold-btn" data-level="middle">🌿 我需要一点帮助</button>
+    <button type="button" class="scaffold-btn" data-level="challenge">🌳 我自己挑战</button>
+  </div>
+  <div class="scaffold-help" data-content>
+    <div class="help-section vocab-help"></div>
+    <div class="help-section sentence-help"></div>
+  </div>
+  <template data-basic>
+    <div><strong>💡 相关词语：</strong><br>食堂、摊位、排队、插队、托盘、餐具、垃圾桶、收拾、擦桌子、保持整洁、遵守秩序</div>
+    <div style="margin-top:10px"><strong>🧩 适合句式：</strong><br>• 我看到……正在……<br>• 他／她这样做可能会……<br>• 我觉得他／她这样做是对的／不对的，因为……<br>• 看到这一幕，我觉得……<br>• 有一次，我也……<br>• 所以，我们应该……</div>
+  </template>
+  <template data-middle>
+    <div><strong>💡 关键词：</strong><br>排队、插队、收拾、整洁、秩序</div>
+    <div style="margin-top:10px"><strong>🧩 思考提示：</strong><br>• 谁在做什么？<br>• 这样做会有什么结果？<br>• 你觉得对不对？为什么？<br>• 你有什么感受？</div>
+  </template>
+  <template data-challenge>
+    <div><strong>🌳 挑战模式：</strong><br>不显示词语和句式，请根据图片自己组织完整回答。</div>
+  </template>
+</div>
+
 <div class="peel-box">
     <div class="peel-header">
         <span class="peel-letter">P</span>
@@ -603,7 +692,32 @@
                             “请你描述这幅图的内容，说得越详尽越好，并提出你的看法和感受。”
                         </p>
                     </div>
-                    <textarea class="student-response" style="min-height: 150px;" placeholder="在此输入或练习你的口头回答..."></textarea>
+                    
+<div class="scaffold-panel" data-scaffold="stage3">
+  <div class="scaffold-title">🪜 选择你需要的帮助</div>
+  <div class="scaffold-buttons">
+    <button type="button" class="scaffold-btn" data-level="basic">🌱 我需要多一点帮助</button>
+    <button type="button" class="scaffold-btn" data-level="middle">🌿 我需要一点帮助</button>
+    <button type="button" class="scaffold-btn" data-level="challenge">🌳 我自己挑战</button>
+  </div>
+  <div class="scaffold-help" data-content>
+    <div class="help-section vocab-help"></div>
+    <div class="help-section sentence-help"></div>
+  </div>
+  <template data-basic>
+    <div><strong>💡 相关词语：</strong><br>食堂、摊位、排队、插队、托盘、餐具、垃圾桶、收拾、擦桌子、保持整洁、遵守秩序</div>
+    <div style="margin-top:10px"><strong>🧩 适合句式：</strong><br>• 我看到……正在……<br>• 他／她这样做可能会……<br>• 我觉得他／她这样做是对的／不对的，因为……<br>• 看到这一幕，我觉得……<br>• 有一次，我也……<br>• 所以，我们应该……</div>
+  </template>
+  <template data-middle>
+    <div><strong>💡 关键词：</strong><br>排队、插队、收拾、整洁、秩序</div>
+    <div style="margin-top:10px"><strong>🧩 思考提示：</strong><br>• 谁在做什么？<br>• 这样做会有什么结果？<br>• 你觉得对不对？为什么？<br>• 你有什么感受？</div>
+  </template>
+  <template data-challenge>
+    <div><strong>🌳 挑战模式：</strong><br>不显示词语和句式，请根据图片自己组织完整回答。</div>
+  </template>
+</div>
+
+<textarea class="student-response" style="min-height: 150px;" placeholder="在此输入或练习你的口头回答..."></textarea>
 <div class="padlet-submit-box">
 <h3>🎙️ <span class="selected-student-name">同学</span>，完成练习了吗？</h3>
 <p>提交前请检查：<br>✅ 我已经完成口试练习<br>✅ 到 Padlet 后，请以自己的姓名作为帖子标题<br>✅ 我会录下完整的口试回答</p>
@@ -736,6 +850,22 @@ function updateStudentName() {
         el.textContent = name || "同学";
     });
 }
+
+
+document.querySelectorAll('.scaffold-panel').forEach(panel=>{
+  const buttons = panel.querySelectorAll('.scaffold-btn');
+  const content = panel.querySelector('[data-content]');
+  buttons.forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      buttons.forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active');
+      const level = btn.dataset.level;
+      const tpl = panel.querySelector(`[data-${level}]`);
+      content.innerHTML = tpl ? tpl.innerHTML : '';
+      content.classList.add('show');
+    });
+  });
+});
 
 </script>
 
